@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_watchlist">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.stockbit.app.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_watchlist"
+        android:name="com.stockbit.app.ui.watchlist.WatchlistFragment"
+        android:label="@string/title_watchlist"
+        tools:layout="@layout/fragment_watchlist" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.stockbit.app.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_stream"
+        android:name="com.stockbit.app.ui.stream.StreamFragment"
+        android:label="@string/title_stream"
+        tools:layout="@layout/fragment_stream" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.stockbit.app.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_search"
+        android:name="com.stockbit.app.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
 </navigation>
