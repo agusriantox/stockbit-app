@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_watchlist"
+            android:icon="@drawable/ic_menu_watchlist"
+            android:title="@string/menu_watchlist" />
+        <item
+            android:id="@+id/navigation_stream"
+            android:icon="@drawable/ic_menu_stream"
+            android:title="@string/menu_stream" />
+        <item
+            android:id="@+id/navigation_search"
+            android:icon="@drawable/ic_menu_search"
+            android:title="@string/menu_search" />
+        <item
+            android:id="@+id/navigation_chat"
+            android:icon="@drawable/ic_menu_chat"
+            android:title="@string/menu_chat" />
+        <item
+            android:id="@+id/navigation_portfolio"
+            android:icon="@drawable/ic_menu_portfolio"
+            android:title="@string/menu_portfolio" />
+
+    </group>
+</menu>

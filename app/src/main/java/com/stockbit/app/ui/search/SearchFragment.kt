@@ -12,18 +12,18 @@ import com.stockbit.app.R
 
 class SearchFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: SearchViewModel
+    private lateinit var searchViewModel: SearchViewModel
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProvider(this).get(SearchViewModel::class.java)
+        searchViewModel =
+            ViewModelProvider(this).get(SearchViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_search, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
+        val textView: TextView = root.findViewById(R.id.text_menu)
+        searchViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

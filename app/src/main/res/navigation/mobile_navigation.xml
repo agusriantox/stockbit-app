@@ -8,18 +8,31 @@
     <fragment
         android:id="@+id/navigation_watchlist"
         android:name="com.stockbit.app.ui.watchlist.WatchlistFragment"
-        android:label="@string/title_watchlist"
+        android:label="@string/menu_watchlist"
         tools:layout="@layout/fragment_watchlist" />
 
     <fragment
         android:id="@+id/navigation_stream"
         android:name="com.stockbit.app.ui.stream.StreamFragment"
-        android:label="@string/title_stream"
+        android:label="@string/menu_stream"
         tools:layout="@layout/fragment_stream" />
 
     <fragment
         android:id="@+id/navigation_search"
         android:name="com.stockbit.app.ui.search.SearchFragment"
-        android:label="@string/title_search"
+        android:label="@string/menu_search"
         tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.stockbit.app.ui.chat.ChatFragment"
+        android:label="@string/menu_chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_portfolio"
+        android:name="com.stockbit.app.ui.portfolio.PortfolioFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_portfolio" />
+
 </navigation>

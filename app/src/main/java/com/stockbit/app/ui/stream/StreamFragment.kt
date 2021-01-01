@@ -12,18 +12,18 @@ import com.stockbit.app.R
 
 class StreamFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: StreamViewModel
+    private lateinit var streamViewModel: StreamViewModel
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProvider(this).get(StreamViewModel::class.java)
+        streamViewModel =
+            ViewModelProvider(this).get(StreamViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_stream, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        val textView: TextView = root.findViewById(R.id.text_menu)
+        streamViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
