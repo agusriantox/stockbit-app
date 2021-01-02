@@ -15,13 +15,13 @@ class WatchlistViewModel constructor(private val watchlistUseCase: WatchlistUseC
         private val TAG = WatchlistViewModel::class.java.name
     }
 
-    var page = 1
+    var page = 0
 
     private val _watchlist = MutableLiveData<Data<List<Watchlist>>>()
     fun getWatchlist(): LiveData<Data<List<Watchlist>>> = _watchlist
 
     fun onRefresh(){
-        page = 1
+        page = 0
         fetchWatchlist()
     }
 
