@@ -18,5 +18,7 @@
     <string name="action_report">Report</string>
     <string name="watchlist_see_all">All Watchlist</string>
     <string name="watchlist_add_symbol">Add Symbol</string>
+    <string name="message_empty_state">Opss.. no data available!</string>
+    <string name="tap_to_retry">Tap to Retry</string>
 
 </resources>
