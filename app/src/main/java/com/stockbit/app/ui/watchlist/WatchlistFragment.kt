@@ -23,10 +23,6 @@ class WatchlistFragment : Fragment() {
         homeViewModel =
             ViewModelProvider(this).get(WatchlistViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_watchlist, container, false)
-        val textView: TextView = root.findViewById(R.id.text_menu)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
         return root
     }
 }

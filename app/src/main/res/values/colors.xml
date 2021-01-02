@@ -12,8 +12,10 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="icon">#888888</color>
+    <color name="icon_primary">#242424</color>
 
     <color name="text_primary">#242424</color>
     <color name="text_secondary">#A9A9A9</color>
+    <color name="divider">#E8E8E8</color>
 
 </resources>

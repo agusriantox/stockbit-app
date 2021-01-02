@@ -16,5 +16,7 @@
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="action_report">Report</string>
+    <string name="watchlist_see_all">All Watchlist</string>
+    <string name="watchlist_add_symbol">Add Symbol</string>
 
 </resources>
