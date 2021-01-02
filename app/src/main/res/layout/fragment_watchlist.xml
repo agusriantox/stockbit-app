@@ -59,6 +59,8 @@
             android:id="@+id/rv_watchlist"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view_divider"
             tools:layout_editor_absoluteX="0dp"

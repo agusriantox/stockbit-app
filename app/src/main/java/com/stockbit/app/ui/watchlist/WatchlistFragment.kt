@@ -1,28 +1,30 @@
 package com.stockbit.app.ui.watchlist
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import com.stockbit.app.R
-import com.stockbit.app.ui.portfolio.PortfolioViewModel
+import com.stockbit.app.adapter.WatchlistAdapter
+import com.stockbit.app.base.DataBindingFragment
+import com.stockbit.app.databinding.FragmentWatchlistBinding
+import kotlinx.android.synthetic.main.fragment_watchlist.*
+import org.koin.android.viewmodel.ext.android.viewModel
 
-class WatchlistFragment : Fragment() {
+class WatchlistFragment : DataBindingFragment<FragmentWatchlistBinding>() {
 
-    private lateinit var homeViewModel: WatchlistViewModel
+    private val watchlistViewModel: WatchlistViewModel by viewModel()
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        homeViewModel =
-            ViewModelProvider(this).get(WatchlistViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_watchlist, container, false)
-        return root
+    override fun layoutId(): Int = R.layout.fragment_watchlist
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val adapter = WatchlistAdapter()
+        rv_watchlist.adapter = adapter
+
+        watchlistViewModel.getWatchList()
+        watchlistViewModel.watchlist().observe(viewLifecycleOwner, Observer {
+            adapter.list = it
+        })
     }
 }
