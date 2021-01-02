@@ -7,10 +7,14 @@ import com.stockbit.app.domain.repository.WatchlistRepository
 
 class WatchlistUseCase constructor(
     private val watchlistRepository: WatchlistRepository
-) : UseCase<BaseResponse<List<Watchlist>>, Any?>() {
+) : UseCase<BaseResponse<List<Watchlist>>, Int>() {
 
-    override suspend fun run(params: Any?): BaseResponse<List<Watchlist>> {
-        return watchlistRepository.fetchWatchlist()
+    override suspend fun run(params: Int?): BaseResponse<List<Watchlist>> {
+        return watchlistRepository.fetchWatchlist(
+            limit = 10,
+            page = params ?: 1,
+            tsym = "IDR"
+        )
     }
 
 }

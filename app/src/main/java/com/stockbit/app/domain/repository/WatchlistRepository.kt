@@ -4,5 +4,5 @@ import com.stockbit.app.base.BaseResponse
 import com.stockbit.app.data.model.Watchlist
 
 interface WatchlistRepository {
-    suspend fun fetchWatchlist() : BaseResponse<List<Watchlist>>
+    suspend fun fetchWatchlist(limit: Int, page: Int, tsym: String): BaseResponse<List<Watchlist>>
 }

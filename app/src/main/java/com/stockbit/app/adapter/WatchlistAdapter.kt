@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.stockbit.app.R
 import com.stockbit.app.data.model.Watchlist
@@ -15,8 +16,19 @@ import kotlin.properties.Delegates
 
 class WatchlistAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    var list: List<Watchlist> by Delegates.observable(emptyList()) { _, _, _ ->
+    var list: MutableList<Watchlist> by Delegates.observable(arrayListOf()) { _, _, _ ->
         notifyDataSetChanged()
+    }
+
+    fun insertData(data: List<Watchlist>, position: Int? = null) {
+        if (position != null) {
+            this.list.addAll(position, data)
+            notifyItemRangeInserted(position, data.size)
+        } else {
+            val index = this.list.size - 1
+            this.list.addAll(data)
+            notifyItemRangeInserted(index, this.list.size - 1)
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {

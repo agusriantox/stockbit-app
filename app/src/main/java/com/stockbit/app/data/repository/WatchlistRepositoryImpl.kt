@@ -7,8 +7,12 @@ import com.stockbit.app.domain.repository.WatchlistRepository
 
 class WatchlistRepositoryImpl(private val service: ApiService) : WatchlistRepository {
 
-    override suspend fun fetchWatchlist(): BaseResponse<List<Watchlist>> {
-        return service.getWatchlist()
+    override suspend fun fetchWatchlist(
+        limit: Int,
+        page: Int,
+        tsym: String
+    ): BaseResponse<List<Watchlist>> {
+        return service.getWatchlist(limit, page, tsym)
     }
 
 }
