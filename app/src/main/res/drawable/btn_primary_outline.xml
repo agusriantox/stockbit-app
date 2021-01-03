@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Otten Coffee Android Apps
+  ~ Copyright (c) 2020. All rights reserved.
+  ~ Created by Agus Rianto on 7/27/20 1:29 PM
+  ~ Last modified 7/23/20 1:11 PM by agus
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/primary" />
+    <corners android:radius="@dimen/radius_medium" />
+</shape>

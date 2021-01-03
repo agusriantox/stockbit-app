@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Stockbit</string>
 
-
     <string name="menu_watchlist">Watchlist</string>
     <string name="menu_stream">Stream</string>
     <string name="menu_search">Search</string>
@@ -20,5 +19,17 @@
     <string name="watchlist_add_symbol">Add Symbol</string>
     <string name="message_empty_state">Opss.. no data available!</string>
     <string name="tap_to_retry">Tap to Retry</string>
+
+    <string name="title_login">Masuk</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_with_google">Masuk dengan Google</string>
+    <string name="login_with_facebook">Masuk dengan Facebook</string>
+    <string name="login_with_fingerprint">Masuk dengan Fingerprint</string>
+    <string name="forgot_password">Lupa Password</string>
+    <string name="dont_have_account">Belum punya akun?</string>
+    <string name="register_now">Daftar sekarang</string>
+    <string name="nav_back">nav_back</string>
 
 </resources>
