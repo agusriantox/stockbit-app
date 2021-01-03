@@ -1,4 +1,4 @@
-package com.stockbit.app
+package com.stockbit.app.ui.main
 
 import android.os.Bundle
 import android.view.Menu
@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import com.stockbit.app.R
 
 class MainActivity : AppCompatActivity() {
 

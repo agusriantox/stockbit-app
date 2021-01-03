@@ -1,13 +1,13 @@
-package com.stockbit.app.ui.stream
+package com.stockbit.app.ui.main.chat
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class StreamViewModel : ViewModel() {
+class ChatViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Stream Fragment"
+        value = "This is Chat Fragment"
     }
     val text: LiveData<String> = _text
 }

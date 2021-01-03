@@ -1,4 +1,4 @@
-package com.stockbit.app.ui.watchlist
+package com.stockbit.app.ui.main.watchlist
 
 import android.os.Bundle
 import android.view.View

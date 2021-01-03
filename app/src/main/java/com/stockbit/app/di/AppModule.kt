@@ -1,6 +1,6 @@
 package com.stockbit.app.di
 
-import com.stockbit.app.ui.watchlist.WatchlistViewModel
+import com.stockbit.app.ui.main.watchlist.WatchlistViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

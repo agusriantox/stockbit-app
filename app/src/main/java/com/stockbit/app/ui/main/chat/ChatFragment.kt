@@ -1,4 +1,4 @@
-package com.stockbit.app.ui.search
+package com.stockbit.app.ui.main.chat
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.stockbit.app.R
 
-class SearchFragment : Fragment() {
+class ChatFragment : Fragment() {
 
-    private lateinit var searchViewModel: SearchViewModel
+    private lateinit var chatViewModel: ChatViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        searchViewModel =
-            ViewModelProvider(this).get(SearchViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_search, container, false)
+        chatViewModel =
+            ViewModelProvider(this).get(ChatViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_chat, container, false)
         val textView: TextView = root.findViewById(R.id.text_menu)
-        searchViewModel.text.observe(viewLifecycleOwner, Observer {
+        chatViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

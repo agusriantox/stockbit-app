@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.stockbit.app.ui.watchlist.WatchlistViewModel" />
+            type="com.stockbit.app.ui.main.watchlist.WatchlistViewModel" />
 
     </data>
 

@@ -1,4 +1,4 @@
-package com.stockbit.app.ui.watchlist
+package com.stockbit.app.ui.main.watchlist
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

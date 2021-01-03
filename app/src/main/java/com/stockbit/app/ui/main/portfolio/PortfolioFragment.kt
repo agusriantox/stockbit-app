@@ -1,4 +1,4 @@
-package com.stockbit.app.ui.portfolio
+package com.stockbit.app.ui.main.portfolio
 
 import android.os.Bundle
 import android.view.LayoutInflater

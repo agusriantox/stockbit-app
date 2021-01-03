@@ -11,7 +11,7 @@ class WatchlistUseCase constructor(
 
     override suspend fun run(params: Int?): BaseResponse<List<Watchlist>> {
         return watchlistRepository.fetchWatchlist(
-            limit = 10,
+            limit = 20,
             page = params ?: 1,
             tsym = "IDR"
         )

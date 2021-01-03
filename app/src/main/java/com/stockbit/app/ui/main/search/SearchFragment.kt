@@ -1,4 +1,4 @@
-package com.stockbit.app.ui.stream
+package com.stockbit.app.ui.main.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.stockbit.app.R
 
-class StreamFragment : Fragment() {
+class SearchFragment : Fragment() {
 
-    private lateinit var streamViewModel: StreamViewModel
+    private lateinit var searchViewModel: SearchViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        streamViewModel =
-            ViewModelProvider(this).get(StreamViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_stream, container, false)
+        searchViewModel =
+            ViewModelProvider(this).get(SearchViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_search, container, false)
         val textView: TextView = root.findViewById(R.id.text_menu)
-        streamViewModel.text.observe(viewLifecycleOwner, Observer {
+        searchViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

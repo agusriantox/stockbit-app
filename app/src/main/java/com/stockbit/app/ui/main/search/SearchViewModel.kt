@@ -1,4 +1,4 @@
-package com.stockbit.app.ui.search
+package com.stockbit.app.ui.main.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
