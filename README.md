@@ -10,9 +10,9 @@ This is the link to try the APK : [Download](https://drive.google.com/file/d/1OG
   - Endless scrolling
 
 ### Tech
--Koin
--Coroutines
--Clean Architecture
--MVVM Pattern
--LiveData
--PaperDB
+- Koin
+- Coroutines
+- Clean Architecture
+- MVVM Pattern
+- LiveData
+- PaperDB
