@@ -79,6 +79,8 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 
+    /* Dependencies for store data in local storage */
+    implementation 'io.paperdb:paperdb:2.6'
 
     // TEST
     testImplementation 'junit:junit:4.13.1'

@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.stockbit.app.base.*
+import com.stockbit.app.data.local.AuthRepository
 import com.stockbit.app.data.model.Auth
 import com.stockbit.app.data.model.User
 import com.stockbit.app.domain.usecase.StockbitLoginUseCase
@@ -33,6 +34,7 @@ class LoginViewModel constructor(private val useCase: StockbitLoginUseCase) : Vi
         useCase.invoke(viewModelScope, User(username = userField.get(), password = passwordField.get()), object : UseCaseResponse<StockBitResponse<Auth>> {
             override fun onSuccess(result: StockBitResponse<Auth>) {
                 if (result.data != null) {
+                    AuthRepository.setAuth(result.data)
                     _loginResult.value = Data(state = State.SUCCESS, data = result.data)
                 } else {
                     _loginResult.value = Data(state = State.ERROR, message = result.message)
