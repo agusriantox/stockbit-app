@@ -31,5 +31,6 @@
     <string name="dont_have_account">Belum punya akun?</string>
     <string name="register_now">Daftar sekarang</string>
     <string name="nav_back">nav_back</string>
+    <string name="or">Atau</string>
 
 </resources>

@@ -24,7 +24,7 @@
     <dimen name="space_super_small">4dp</dimen>
 
     <!-- Border Radius -->
-    <dimen name="button_large">40dp</dimen>
+    <dimen name="button_large">46dp</dimen>
     <dimen name="button_medium">36dp</dimen>
     <dimen name="button_small">32dp</dimen>
 
