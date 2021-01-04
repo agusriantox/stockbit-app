@@ -21,7 +21,7 @@ object AuthRepository {
     }
 
     fun logout(){
-        Paper.book(KEY_AUTH).destroy()
+        Paper.book(BOOK_AUTH).destroy()
     }
 
 }

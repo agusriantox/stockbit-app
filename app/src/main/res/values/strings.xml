@@ -6,6 +6,7 @@
     <string name="menu_search">Search</string>
     <string name="menu_chat">Chat</string>
     <string name="menu_portfolio">Portfolio</string>
+    <string name="menu_logout">Logout</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/main_menu"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/navigation_watchlist"
             android:icon="@drawable/ic_menu_watchlist"
@@ -24,6 +26,14 @@
             android:id="@+id/navigation_portfolio"
             android:icon="@drawable/ic_menu_portfolio"
             android:title="@string/menu_portfolio" />
-
     </group>
+
+    <group
+        android:id="@+id/account"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/navigation_logout"
+            android:title="@string/menu_logout" />
+    </group>
+
 </menu>
